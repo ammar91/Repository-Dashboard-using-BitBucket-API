@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketWeb", "BitBucketWeb\BitBucketWeb.csproj", "{C4592A01-5B16-4A4A-9859-46D77D742AAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketGateway", "BitBucketGateway\BitBucketGateway.csproj", "{CF36ADCC-3C25-4BFA-ABFB-912E29345BA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BitBucketService", "BitBucketService\BitBucketService.csproj", "{D4A28847-9950-4AC5-A5CF-2353BFE4C4CD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{FAC2A58B-5363-4491-8833-FEB9F59A441A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4592A01-5B16-4A4A-9859-46D77D742AAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4592A01-5B16-4A4A-9859-46D77D742AAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4592A01-5B16-4A4A-9859-46D77D742AAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4592A01-5B16-4A4A-9859-46D77D742AAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF36ADCC-3C25-4BFA-ABFB-912E29345BA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF36ADCC-3C25-4BFA-ABFB-912E29345BA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF36ADCC-3C25-4BFA-ABFB-912E29345BA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF36ADCC-3C25-4BFA-ABFB-912E29345BA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4A28847-9950-4AC5-A5CF-2353BFE4C4CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4A28847-9950-4AC5-A5CF-2353BFE4C4CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4A28847-9950-4AC5-A5CF-2353BFE4C4CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4A28847-9950-4AC5-A5CF-2353BFE4C4CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAC2A58B-5363-4491-8833-FEB9F59A441A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAC2A58B-5363-4491-8833-FEB9F59A441A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAC2A58B-5363-4491-8833-FEB9F59A441A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAC2A58B-5363-4491-8833-FEB9F59A441A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿@model List<BitBucketService.Repository>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th> Name</th>
+                <th> Created</th>
+                <th> Owner</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@Html.ActionLink(item.Name, "Activity", "Home", new { accountName = item.Owner, slug = item.Slug }, null)</td>
+                    <td>@item.Created</td>
+                    <td>@item.Owner</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

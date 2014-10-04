@@ -1,0 +1,61 @@
+﻿@model BitBucketWeb.Models.ActivityViewModel
+@{
+    ViewBag.Title = "Commits";
+}
+
+<h3>Commits History</h3>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Message</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.RepositoryChangesets)
+            {
+                <tr>
+                    <td>@item.Author</td>
+                    <td>@item.Message</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>
+<hr />
+<h3>ISSUES</h3>
+<div>
+    <div>
+        @Html.ActionLink("Create New", "Create", "Issue", new { accountName = ViewBag.AccountName, slug = ViewBag.Slug }, null)
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Reported By</th>
+                <th>Created</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model.RepositoryIssues)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.Content</td>
+                    <td>@item.Status</td>
+                    <td>@item.ReportedBy</td>
+                    <td>@item.Created</td>
+                    <td>@Html.ActionLink("Edit", "Edit", "Issue", new { accountName = ViewBag.AccountName, slug = ViewBag.Slug, issueId = item.Id },null)</td>
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,50 @@
+﻿@model BitBucketService.RepositoryIssues
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create New Issue</h2>
+@using (Html.BeginForm("Create", "Issue", new { accountName = ViewBag.AccountName, slug = ViewBag.Slug }, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Title, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextBoxFor(model => model.Title, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Content, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            @Html.TextAreaFor(model => model.Content, new { @class = "form-control" })
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Kind, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            <select name="Kind" class="form-control">
+                <option>bug</option>
+                <option>enhancement</option>
+                <option>proposal</option>
+                <option>task</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        @Html.LabelFor(model => model.Priority, new { @class = "col-sm-2 control-label" })
+        <div class="col-sm-10">
+            <select name="Priority" class="form-control">
+                <option>trivial</option>
+                <option>minor</option>
+                <option>major</option>
+                <option>critical</option>
+                <option>blocker</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <input class="btn btn-primary col-md-offset-2" type="submit" value="Create Issue" />
+    </div>
+}
+
