@@ -20,19 +20,3 @@ The Project divided into 4 separate layers.
 
   It is designed for perofrming common operations like Sending an Email to the Repository owner whenever a new activity 
   has been performed like on "creating new issue".
-
-
-Configuration Needed.
-
-Inside web.config of 'BitBucketWeb' there is a need to setup ConsumerKey and ConsumerSecret of BitBucket Consumer under <appSetting>
-
-<add key="ConsumerKey" value="" />
-<add key="ConsumerSecret" value="" />
-
-In order to receive email notification of new activity, add your email
-
-<add key="EmailNotifications" value="" />
-
-Also, set credentials from which user's get notified
-
-<network host="smtp.gmail.com" port="25" userName="" password="" enableSsl="true" targetName="BitBucket App" />
