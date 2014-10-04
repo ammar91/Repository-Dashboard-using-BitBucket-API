@@ -12,7 +12,7 @@ The Project divided into 4 separate layers.
     
 2) BitBucketService:
 
-  It have the methods and business logic the application uses to send to the gateway layer.
+  It has methods and business logic the application uses to send to the gateway layer.
   
 3) BitBucketWeb: (The User Interface - MVC5 Web Application)
 
